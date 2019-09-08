@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_homenot"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:contentDescription="Go to Home"
+        android:title="@string/title_home"
+        />
+
+    <item
+        android:id="@+id/navigation_gamenot"
+        android:icon="@drawable/game"
+        android:contentDescription="Play Quiz Game"
+        android:title="Game" />
+
+    <item
+        android:id="@+id/aboutnot"
+        android:icon="@drawable/aboutnav"
+        android:title="About" />
+
+</menu>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="5dp"
+    card_view:cardMaxElevation="15dp"
+    card_view:cardElevation="10dp"
+    card_view:contentPadding="5dp"
+    android:padding="1dp"
+    card_view:cardBackgroundColor="@color/white"
+    card_view:cardUseCompatPadding="true"
+    card_view:cardPreventCornerOverlap="false"
+    android:foreground="?selectableItemBackground"
+    android:clickable="true" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:layout_width="300dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/back"
+            android:layout_height="300dp"
+            android:scaleType="fitXY"
+            app:civ_border_color="#000000"
+            android:id="@+id/item_image"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_below="@+id/item_image"
+            android:id="@+id/item_title"
+            android:textColor="#D2691E"
+            android:layout_centerHorizontal="true"
+            android:textSize="28sp"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/view21"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/item_title"
+            android:background="@color/grey"
+            android:layout_margin="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:id="@+id/item_desc"
+            android:text=" "
+            android:textSize="17dp"
+            android:layout_below="@+id/view21"
+            />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

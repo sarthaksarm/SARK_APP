@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "809703817236",
+    "firebase_url": "https://sarkapp19.firebaseio.com",
+    "project_id": "sarkapp19",
+    "storage_bucket": "sarkapp19.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:809703817236:android:1cf12c02bda9143c0da701",
+        "android_client_info": {
+          "package_name": "com.sark.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "809703817236-s90u4au3p7ajqqcvpsc2othugi3evamg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sark.android",
+            "certificate_hash": "116f836280120fadfcb399afd59567a09f628200"
+          }
+        },
+        {
+          "client_id": "809703817236-1cosspfjl331svuaqh8i6b0ff7b01egr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwKEVvBDgS1yjUZGf58RG3TYfMnlo_9Mo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "809703817236-1cosspfjl331svuaqh8i6b0ff7b01egr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".EventDetail">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_height="wrap_content"
+        android:id="@+id/upcom"
+        />
+    <View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:id="@+id/view23"
+    android:layout_marginTop="5dp"
+    android:layout_below="@+id/upcom"
+    android:background="@color/grey"
+
+    />
+    <TextView
+        android:layout_width="match_parent"
+        android:textStyle="bold"
+        android:textSize="22dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/view23"
+        android:id="@+id/Tex1"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/view22"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/Tex1"
+        android:background="@color/grey"
+        android:layout_margin="10dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="19dp"
+        android:id="@+id/Desc"
+        android:layout_below="@+id/view22"/>
+    <info.hoang8f.widget.FButton
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/designbtnshome2"
+        android:text="Register"
+        android:textSize="16dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/Register"
+        android:layout_below="@+id/Desc"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nettxtevent"
+        android:visibility="invisible"
+        android:layout_below="@+id/Register"/>
+
+</RelativeLayout>
+</ScrollView>

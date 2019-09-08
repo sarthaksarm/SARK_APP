@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContactUs">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/contactbg"
+        android:id="@+id/backimg"
+        />
+    <Button
+        android:id="@+id/msgbtn"
+        android:layout_below="@+id/backimg"
+        android:layout_width="match_parent"
+        android:layout_marginTop="-100dp"
+        android:drawableStart="@drawable/message_us"
+        android:alpha="0.75"
+        android:layout_height="wrap_content"
+        android:background="@drawable/designbtnshome"
+        android:text="Click to Message   "
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:typeface="serif"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:id="@+id/callbtn"
+        android:layout_below="@+id/msgbtn"
+        android:layout_marginTop="35dp"
+        android:layout_width="match_parent"
+        android:textColor="#000"
+        android:drawableStart="@drawable/callicon"
+        android:layout_height="wrap_content"
+        android:alpha="0.75"
+        android:text="Click to Call: 7004297271"
+        android:background="@drawable/designbtnshome"
+        android:textSize="20dp"
+        android:typeface="serif"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:id="@+id/webbtn"
+        android:textColor="#000"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/callbtn"
+        android:drawableStart="@drawable/webicon"
+        android:background="@drawable/designbtnshome"
+        android:alpha="0.75"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="   Click to Website   "
+        android:textSize="20dp"
+        android:typeface="serif"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>

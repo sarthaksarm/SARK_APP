@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutUs">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="55dp">
+
+    <WebView
+        android:background="#ffffff"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:padding="20dp"
+        android:foregroundGravity="center"
+        android:textColor="#000"
+        android:id="@+id/webview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </WebView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/webview1"
+            android:id="@+id/nettxt"
+            android:visibility="invisible"
+            />
+    </RelativeLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:itemIconTint="@color/white"
+        android:background="#000"
+        app:itemTextColor="@color/white"
+        android:alpha="0.9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/navigation" />
+</androidx.constraintlayout.widget.ConstraintLayout>
