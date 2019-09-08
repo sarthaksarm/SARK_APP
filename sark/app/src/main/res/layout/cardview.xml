@@ -24,11 +24,10 @@
         android:gravity="center">
 
         <com.mikhaellopez.circularimageview.CircularImageView
-            android:layout_width="300dp"
+            android:layout_width="273dp"
             android:layout_centerHorizontal="true"
             android:src="@drawable/back"
-            android:layout_height="300dp"
-            android:scaleType="fitXY"
+            android:layout_height="270dp"
             app:civ_border_color="#000000"
             android:id="@+id/item_image"
             />

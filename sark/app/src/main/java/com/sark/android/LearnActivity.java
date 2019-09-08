@@ -2,6 +2,7 @@ package com.sark.android;
 
 import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import androidx.annotation.NonNull;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -14,6 +15,10 @@ import android.view.animation.AccelerateDecelerateInterpolator;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.google.android.material.snackbar.Snackbar;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.ValueEventListener;
 import com.sark.android.Play.HomeScreen;
 import com.sark.android.TeamDevAchi.Blog;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
@@ -22,6 +27,7 @@ import com.flaviofaria.kenburnsview.RandomTransitionGenerator;
 import com.flaviofaria.kenburnsview.Transition;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.sark.android.TeamDevAchi.TeamActivity;
 import com.squareup.picasso.Picasso;
 
 public class LearnActivity extends AppCompatActivity {
@@ -31,6 +37,7 @@ public class LearnActivity extends AppCompatActivity {
     RecyclerView.Adapter adapter;
     KenBurnsView kenBurnsView;
     private Boolean moving=true;
+    String name1;
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -136,9 +143,41 @@ public class LearnActivity extends AppCompatActivity {
     public static class BlogViewHolder extends RecyclerView.ViewHolder {
         View mview;
 
-        public BlogViewHolder(View itemView) {
+        public BlogViewHolder(final View itemView) {
             super(itemView);
             mview = itemView;
+//
+//            DatabaseReference reference= FirebaseDatabase.getInstance().getReference(getAdapterPosition()+"");
+//            Snackbar snackbar = Snackbar.make(itemView,"Opening Link ...",Snackbar.LENGTH_LONG);
+//            snackbar.show();
+//
+//            reference.addValueEventListener(new ValueEventListener() {
+//                @Override
+//                public void onDataChange(DataSnapshot dataSnapshot) {
+//                    for(DataSnapshot x:dataSnapshot.getChildren()) {
+//                        name1 = dataSnapshot.child("link").getValue().toString();
+//                        //Toast.makeText(Main3Activity.this, ""+name1, Toast.LENGTH_SHORT).show();
+//
+//                    }
+//                    Intent i=new Intent(Intent.ACTION_VIEW);
+//                    i.setData(Uri.parse(name1));
+//                    startActivity(i);
+//
+//                }
+//
+//                @Override
+//                public void onCancelled(DatabaseError databaseError) {
+//
+//                }
+//            });
+//
+//            itemView.setOnClickListener(new View.OnClickListener() {
+//                @Override
+//                public void onClick(View view) {
+//                    itemView.getContext().startActivity(new Intent(itemView.getContext(), TeamActivity.class));
+//                }
+//            });
+
         }
 
         public void setTitle(String title) {
